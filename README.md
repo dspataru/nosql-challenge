@@ -5,9 +5,9 @@
 
 ## Table of Contents
 * [Background](https://github.com/dspataru/nosql-challenge/tree/main#background)
-* [Database and Jupyter Notebook Set Up](https://github.com/dspataru/nosql-challenge/tree/main#database_and_jupyter_notebook_set_up)
-* [Update the Database](https://github.com/dspataru/nosql-challenge/tree/main#update_the_database)
-* [Exploratory Analysis](https://github.com/dspataru/nosql-challenge/tree/main#exploratory_analysis)
+* [Database and Jupyter Notebook Set Up](https://github.com/dspataru/nosql-challenge/tree/main#database-and-jupyter-notebook-set-up)
+* [Update the Database](https://github.com/dspataru/nosql-challenge/tree/main#update-the-database)
+* [Exploratory Analysis](https://github.com/dspataru/nosql-challenge/tree/main#exploratory-analysis)
 
 ## Background
 
@@ -18,8 +18,8 @@ For this project, we import a JSON file of food establishment ratings data to a 
 ![food](https://github.com/dspataru/nosql-challenge/assets/61765352/af9141f1-ccfe-48a6-99ff-45cf0f424515)
 
 This project is broken up into two Jupyter Notebook:
-1. [NoSQL_setup_starter](): This notebook covers the first two sections of this repository, the database and jupyter notebook set up, as well as the steps that were taken to update the database before performing an exploratory analysis on the establishments.
-2. [NoSQL_analysis_starter](): This notebook contains the code to answer the following questions:
+1. [NoSQL_setup_starter](https://github.com/dspataru/nosql-challenge/blob/main/NoSQL_setup_starter.ipynb): This notebook covers the first two sections of this repository, the database and jupyter notebook set up, as well as the steps that were taken to update the database before performing an exploratory analysis on the establishments.
+2. [NoSQL_analysis_starter](https://github.com/dspataru/nosql-challenge/blob/main/NoSQL_analysis_starter.ipynb): This notebook contains the code to answer the following questions:
 * Which establishments have a hygiene score equal to 20?
 * Which establishments in London have a RatingValue greater than or equal to 4?
 * What are the top 5 establishments with a RatingValue of 5, sorted by lowest hygiene score, nearest to the new restaurant added, "Penang Flavours"?
@@ -30,7 +30,7 @@ noSQL, Python, mongodb, pymongo, aggregation pipeline, exploratory analysis, Mon
 
 ## Database and Jupyter Notebook Set Up
 
-The first step to be able to analyze the data is import the data that is provided as a [json file]() from the Terminal using the following command `mongoimport --type json -d uk_food -c establishments --drop --jsonArray establishments.json`. We call the database 'uk_food' and the collection 'establishments'. MongoClient was imported from the pymongo library so that an instance of MongoClient could be created and the database could be accessed. The Pretty Print library was also imported to display the data throughout the set up and analysis process. After the command to load the database is run, you are able to see the database was imported properly by running the command `mongo.list_database_names()`. Below is an example of what one of the documents in the establishments collection looks like:
+The first step to be able to analyze the data is import the data that is provided as a [json file](https://github.com/dspataru/nosql-challenge/blob/main/Resources/establishments.json) from the Terminal using the following command `mongoimport --type json -d uk_food -c establishments --drop --jsonArray establishments.json`. We call the database 'uk_food' and the collection 'establishments'. MongoClient was imported from the pymongo library so that an instance of MongoClient could be created and the database could be accessed. The Pretty Print library was also imported to display the data throughout the set up and analysis process. After the command to load the database is run, you are able to see the database was imported properly by running the command `mongo.list_database_names()`. Below is an example of what one of the documents in the establishments collection looks like:
 
 ```python
 {'AddressLine1': 'The Pines Garden',
