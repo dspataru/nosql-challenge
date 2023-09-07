@@ -276,4 +276,5 @@ The number of documents in the results is 55, and below are the top 10 results.
  {'_id': 'Tendring', 'count': 542}]
 ```
 These results were converted into a python DataFrame. The first 10 rows of the DataFrame can be seen below:
+
 ![Q4](https://github.com/dspataru/nosql-challenge/assets/61765352/7b9988d5-ebd9-43bc-a413-6ec157224e30)
